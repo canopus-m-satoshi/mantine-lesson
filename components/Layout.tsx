@@ -11,12 +11,12 @@ export const Layout: FC<Props> = ({ children, title = 'Mantaine' }) => {
     <div className="flex min-h-screen">
       <Head>
         <title>{title}</title>
-        <header></header>
-        <main className="flex flex-1 flex-col justify-center p-4">
-          {children}
-        </main>
-        <footer></footer>
       </Head>
+      <header></header>
+      <main className="flex flex-1 flex-col justify-center p-4">
+        {children}
+      </main>
+      <footer></footer>
     </div>
   )
 }
