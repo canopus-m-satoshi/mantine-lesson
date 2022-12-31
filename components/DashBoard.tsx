@@ -48,6 +48,13 @@ export const DashBoard = () => {
           >
             Multi Select
           </Menu.Item>
+          <Menu.Item
+            icon={<Settings size={16} />}
+            component={NextLink}
+            href="/fetch-api"
+          >
+            Data loader
+          </Menu.Item>
         </Menu>
       </Center>
       <Center>
