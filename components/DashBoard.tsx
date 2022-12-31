@@ -6,6 +6,7 @@ import { Settings } from 'tabler-icons-react'
 
 import { Layout } from '../components/Layout'
 import { supabase } from '../utils/supabase'
+import { CustomCard } from './CustomCard'
 
 export const DashBoard = () => {
   const signOut = () => {
@@ -75,6 +76,13 @@ export const DashBoard = () => {
             href="/avatar"
           >
             Avatar
+          </Menu.Item>
+          <Menu.Item
+            icon={<Settings size={16} />}
+            component={NextLink}
+            href="/card"
+          >
+            Card
           </Menu.Item>
         </Menu>
       </Center>
