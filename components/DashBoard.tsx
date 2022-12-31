@@ -54,6 +54,13 @@ export const DashBoard = () => {
             href="/fetch-api"
           >
             Data loader
+          </Menu.Item>{' '}
+          <Menu.Item
+            icon={<Settings size={16} />}
+            component={NextLink}
+            href="/dialog"
+          >
+            Dialog
           </Menu.Item>
         </Menu>
       </Center>
