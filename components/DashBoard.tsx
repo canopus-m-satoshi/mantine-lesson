@@ -18,6 +18,39 @@ export const DashBoard = () => {
         <ShieldCheckIcon className="mb-4 h-14 w-14 text-teal-500" />
       </Center>
       <Center>
+        <Menu trigger="hover" size="xl">
+          <Menu.Label>UI Components</Menu.Label>
+          <Menu.Item
+            icon={<Settings size={16} />}
+            component={NextLink}
+            href="/button"
+          >
+            Button
+          </Menu.Item>
+          <Menu.Item
+            icon={<Settings size={16} />}
+            component={NextLink}
+            href="/grid"
+          >
+            Grid
+          </Menu.Item>
+          <Menu.Item
+            icon={<Settings size={16} />}
+            component={NextLink}
+            href="/group"
+          >
+            Group
+          </Menu.Item>
+          <Menu.Item
+            icon={<Settings size={16} />}
+            component={NextLink}
+            href="/multi-select"
+          >
+            Multi Select
+          </Menu.Item>
+        </Menu>
+      </Center>
+      <Center>
         <ActionIcon my="md" size="lg" onClick={signOut}>
           <LogoutIcon />
         </ActionIcon>
