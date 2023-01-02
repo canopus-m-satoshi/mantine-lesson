@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 
 import { MantineProvider } from '@mantine/core'
+import { NotificationsProvider } from '@mantine/notifications'
 import type { AppProps } from 'next/app'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
@@ -25,7 +26,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           fontFamily: 'Verdana, sans-serif',
         }}
       >
-        <Component {...pageProps} />
+        <NotificationsProvider limit={2}>
+          <Component {...pageProps} />
+        </NotificationsProvider>
       </MantineProvider>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
